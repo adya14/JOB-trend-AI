@@ -40,7 +40,7 @@ Follow these steps to set up the project environment locally.
 
 ### 1\. Clone the Repository
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   git clone   cd Market_trend_AI   `
+`git clone   cd Market_trend_AI`
 
 ### 2\. Create and Activate a Virtual Environment
 
@@ -52,8 +52,7 @@ Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQL
 ### 3\. Install Dependencies
 
 Install all the required libraries from the requirements.txt file.
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   pip install -r requirements.txt   `
+`pip install -r requirements.txt`
 
 How to Run the Project
 ----------------------
@@ -67,20 +66,19 @@ Ensure your raw dataset (e.g., linkedin-jobs-usa.csv) is placed inside the data/
 ### 2\. Preprocess the Data
 
 Run the preprocessing script to clean the data and extract skills. This will generate a jobs\_with\_skills.csv file in data/processed/.
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   python src/data_preprocessing.py   `
+`python src/data_preprocessing.py`
 
 ### 3\. Run the Forecasting Pipeline
 
 Execute the main training script. This will analyze the processed data, train a model for each skill, and save the forecasts in the results/ folder.
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   python src/train.py   `
+`python src/train.py`
 
 ### 4\. Launch the Interactive Dashboard
 
 Start the Streamlit application to view the results.
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   streamlit run app.py   `
+`streamlit run app.py`
 
 Navigate to the local URL provided in your terminal (usually http://localhost:8501) to interact with the dashboard.
 
@@ -88,7 +86,7 @@ Navigate to the local URL provided in your terminal (usually http://localhost:85
 
 To verify the code's integrity, run the automated tests.
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   pytest   `
+`pytest`
 
 Technology Stack
 ----------------
