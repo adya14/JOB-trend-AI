@@ -17,14 +17,6 @@ Features
 *   **Interactive Dashboard**: A user-friendly web interface built with Streamlit to visualize and compare skill demand forecasts.
     
 *   **Automated Testing**: Includes unit tests with pytest to ensure code quality and reliability.
-    
-
-Project Structure
------------------
-
-The repository is organized following best practices for reproducibility and maintainability:
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   .  ├── Market_trend_AI/  │   ├── .gitignore  │   ├── README.md  │   ├── app.py  │   ├── configs/  │   │   └── skills.json  │   ├── data/  │   │   ├── raw/  │   │   └── processed/  │   ├── notebooks/  │   │   ├── EDA.ipynb  │   │   └── ResultsAnalysis.ipynb  │   ├── requirements.txt  │   ├── results/  │   ├── src/  │   │   ├── __init__.py  │   │   ├── data_preprocessing.py  │   │   ├── feature_engineering.py  │   │   ├── model.py  │   │   └── train.py  │   ├── style/  │   │   └── main.css  │   └── tests/  │       └── test_preprocessing.py  └── venv/   `
 
 Setup and Installation
 ----------------------
