@@ -1,7 +1,7 @@
 Job Skill Demand Forecasting Engine
 ===================================
 
-This project analyzes job postings from LinkedIn to identify and forecast the demand for various technical skills over time. It uses Python, pandas for data manipulation, and Meta's Prophet forecasting library to model trends. The results are presented in an interactive web application built with Streamlit.
+This project analyzes job postings to identify and forecast the demand for various technical skills over time. It uses Python, pandas for data manipulation, and Meta's Prophet forecasting library to model trends. The results are presented in an interactive web application built with Streamlit.
 
 This project was developed as part of the "Minor in AI" program at IIT Ropar.
 
