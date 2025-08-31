@@ -32,14 +32,13 @@ Follow these steps to set up the project environment locally.
 
 ### 1\. Clone the Repository
 
-`git clone   cd Market_trend_AI`
+`git clone https://github.com/adya14/JOB-trend-AI.git`
 
 ### 2\. Create and Activate a Virtual Environment
 
-*   python3 -m venv venvsource venv/bin/activate
-    
-*   python -m venv venv.\\venv\\Scripts\\activate
-    
+*   python3 -m venv venv
+
+*  source venv/bin/activate    
 
 ### 3\. Install Dependencies
 
@@ -58,6 +57,7 @@ Ensure your raw dataset (e.g., linkedin-jobs-usa.csv) is placed inside the data/
 ### 2\. Preprocess the Data
 
 Run the preprocessing script to clean the data and extract skills. This will generate a jobs\_with\_skills.csv file in data/processed/.
+
 `python src/data_preprocessing.py`
 
 ### 3\. Run the Forecasting Pipeline
