@@ -1,0 +1,7 @@
+{
+  "programming_languages": ["python", "java", "c++", "javascript", "go", "rust", "sql"],
+  "cloud_technologies": ["aws", "azure", "gcp", "docker", "kubernetes"],
+  "ml_frameworks": ["tensorflow", "pytorch", "scikit-learn", "keras"],
+  "web_frameworks": ["react", "django", "flask", "node.js"],
+  "analytics_tools": ["tableau", "power bi", "pandas", "numpy"]
+}
