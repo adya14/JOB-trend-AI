@@ -1,114 +1,106 @@
 Job Skill Demand Forecasting Engine
+===================================
+
 This project analyzes job postings from LinkedIn to identify and forecast the demand for various technical skills over time. It uses Python, pandas for data manipulation, and Meta's Prophet forecasting library to model trends. The results are presented in an interactive web application built with Streamlit.
 
 This project was developed as part of the "Minor in AI" program at IIT Ropar.
 
 Features
-Data Processing: Cleans and processes thousands of job listings from a raw CSV file.
+--------
 
-Skill Extraction: Uses NLTK to parse job descriptions and identify mentions of pre-defined technical skills.
-
-Time-Series Forecasting: Models the historical demand for each skill and forecasts future trends using Prophet.
-
-Interactive Dashboard: A user-friendly web interface built with Streamlit to visualize and compare skill demand forecasts.
-
-Automated Testing: Includes unit tests with pytest to ensure code quality and reliability.
+*   **Data Processing**: Cleans and processes thousands of job listings from a raw CSV file.
+    
+*   **Skill Extraction**: Uses NLTK to parse job descriptions and identify mentions of pre-defined technical skills.
+    
+*   **Time-Series Forecasting**: Models the historical demand for each skill and forecasts future trends using Prophet.
+    
+*   **Interactive Dashboard**: A user-friendly web interface built with Streamlit to visualize and compare skill demand forecasts.
+    
+*   **Automated Testing**: Includes unit tests with pytest to ensure code quality and reliability.
+    
 
 Project Structure
+-----------------
+
 The repository is organized following best practices for reproducibility and maintainability:
 
-.
-├── Market_trend_AI/
-│   ├── .gitignore
-│   ├── README.md
-│   ├── app.py
-│   ├── configs/
-│   │   └── skills.json
-│   ├── data/
-│   │   ├── raw/
-│   │   └── processed/
-│   ├── notebooks/
-│   │   ├── EDA.ipynb
-│   │   └── ResultsAnalysis.ipynb
-│   ├── requirements.txt
-│   ├── results/
-│   ├── src/
-│   │   ├── __init__.py
-│   │   ├── data_preprocessing.py
-│   │   ├── feature_engineering.py
-│   │   ├── model.py
-│   │   └── train.py
-│   ├── style/
-│   │   └── main.css
-│   └── tests/
-│       └── test_preprocessing.py
-└── venv/
+Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   .  ├── Market_trend_AI/  │   ├── .gitignore  │   ├── README.md  │   ├── app.py  │   ├── configs/  │   │   └── skills.json  │   ├── data/  │   │   ├── raw/  │   │   └── processed/  │   ├── notebooks/  │   │   ├── EDA.ipynb  │   │   └── ResultsAnalysis.ipynb  │   ├── requirements.txt  │   ├── results/  │   ├── src/  │   │   ├── __init__.py  │   │   ├── data_preprocessing.py  │   │   ├── feature_engineering.py  │   │   ├── model.py  │   │   └── train.py  │   ├── style/  │   │   └── main.css  │   └── tests/  │       └── test_preprocessing.py  └── venv/   `
 
 Setup and Installation
+----------------------
+
 Follow these steps to set up the project environment locally.
 
-Prerequisites
-Python 3.9+
+### Prerequisites
 
-pip and venv
+*   Python 3.9+
+    
+*   pip and venv
+    
 
-1. Clone the Repository
-git clone <your-repository-url>
-cd Market_trend_AI
+### 1\. Clone the Repository
 
-2. Create and Activate a Virtual Environment
-On macOS/Linux:
+Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   git clone   cd Market_trend_AI   `
 
-python3 -m venv venv
-source venv/bin/activate
+### 2\. Create and Activate a Virtual Environment
 
-On Windows:
+*   python3 -m venv venvsource venv/bin/activate
+    
+*   python -m venv venv.\\venv\\Scripts\\activate
+    
 
-python -m venv venv
-.\venv\Scripts\activate
+### 3\. Install Dependencies
 
-3. Install Dependencies
 Install all the required libraries from the requirements.txt file.
 
-pip install -r requirements.txt
+Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   pip install -r requirements.txt   `
 
 How to Run the Project
+----------------------
+
 Execute the following steps in order from the main project directory.
 
-1. Place Your Data
+### 1\. Place Your Data
+
 Ensure your raw dataset (e.g., linkedin-jobs-usa.csv) is placed inside the data/raw/ directory.
 
-2. Preprocess the Data
-Run the preprocessing script to clean the data and extract skills. This will generate a jobs_with_skills.csv file in data/processed/.
+### 2\. Preprocess the Data
 
-python src/data_preprocessing.py
+Run the preprocessing script to clean the data and extract skills. This will generate a jobs\_with\_skills.csv file in data/processed/.
 
-3. Run the Forecasting Pipeline
+Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   python src/data_preprocessing.py   `
+
+### 3\. Run the Forecasting Pipeline
+
 Execute the main training script. This will analyze the processed data, train a model for each skill, and save the forecasts in the results/ folder.
 
-python src/train.py
+Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   python src/train.py   `
 
-4. Launch the Interactive Dashboard
+### 4\. Launch the Interactive Dashboard
+
 Start the Streamlit application to view the results.
 
-streamlit run app.py
+Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   streamlit run app.py   `
 
 Navigate to the local URL provided in your terminal (usually http://localhost:8501) to interact with the dashboard.
 
-5. Run Tests (Optional)
+### 5\. Run Tests (Optional)
+
 To verify the code's integrity, run the automated tests.
 
-pytest
+Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   pytest   `
 
 Technology Stack
-Programming Language: Python
+----------------
 
-Data Manipulation: Pandas, NLTK
-
-Time-Series Forecasting: Prophet (by Meta)
-
-Web Framework: Streamlit
-
-Plotting: Plotly
-
-Testing: Pytest
+*   **Programming Language**: Python
+    
+*   **Data Manipulation**: Pandas, NLTK
+    
+*   **Time-Series Forecasting**: Prophet (by Meta)
+    
+*   **Web Framework**: Streamlit
+    
+*   **Plotting**: Plotly
+    
+*   **Testing**: Pytest
